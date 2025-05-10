@@ -520,7 +520,7 @@ FinFuncion
 
 // Ejercicio:15. Cálculo de cambio exacto con billetes de $10 y $5
 // Pedir valor del vuelto y mostrar cuántos billetes de $10 y $5 necesita
-.
+
 // entrada: vuelto=0 (se lee), B10=0 (se calcula), B5=0 (se calcula)
 // poceso: pedir el valor del vuelto 
 // leer vuelto

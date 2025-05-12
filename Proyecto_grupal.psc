@@ -26,7 +26,7 @@ FinFuncion
 
 
 //Ejercicio 2: Conversor de kilogramos al libras 
-//Crear un menú que permita al usuario:Convertir kilogramos a libras o  Convertir libras a kilogramos
+//Crear un menÃº que permita al usuario:Convertir kilogramos a libras o  Convertir libras a kilogramos
 
 //entrada: cantidad=0 (se calcula), resultado=0 (se calcula), opc=0 (se lee)
 //proceso: si elige la opcion 1 Se multiplica el valor de 1libra q es 2.20462  para convertir kg a Lb
@@ -34,7 +34,7 @@ FinFuncion
 //salida: kg a lb , lb a kg
 
 Funcion  Conversor_de_kilogramos_a_libras
-    Definir opcion Como Entero
+    Definir opc Como Entero
     Definir cantidad, resultado Como Real	
 	cantidad=0; resultado=0; opc=0
 	
@@ -42,8 +42,8 @@ Funcion  Conversor_de_kilogramos_a_libras
     Escribir "Conversor de peso"   
     Escribir "1. Convertir kilogramos a libras"   //opcion 1
     Escribir "2. Convertir libras a kilogramos"   //opcion 2
-    Escribir "Seleccione una opción (1 o 2): "   // instrucción del proceso 
-    Leer opc // opc es la abreviatura de opción
+    Escribir "Seleccione una opciÃ³n (1 o 2): "   // instrucciÃ³n del proceso 
+    Leer opc // opc es la abreviatura de opciÃ³n
 	
 	//si es la opcion 1 debe de ingresar un valor 
     Si opc = 1 Entonces
@@ -59,14 +59,14 @@ Funcion  Conversor_de_kilogramos_a_libras
             resultado <- cantidad / 2.20462   //se debe de divir la cantidad por lo equivale una libra 
             Escribir cantidad, " libras equivalen a ", resultado, " kilogramos."
         Sino
-            Escribir "Opción no válida."
+            Escribir "OpciÃ³n no vÃ¡lida."
         FinSi
     FinSi
 FinFuncion
 
 
 //Ejercicio 3: Calculadora de descuentos
-// Aplicar 0%, 5% o 10% de descuento según el monto de compra
+// Aplicar 0%, 5% o 10% de descuento segÃºn el monto de compra
 
 // ENTRADA
 // monto
@@ -144,17 +144,17 @@ Funcion Calcular_IVA_Y_descuento
 FinFuncion
 
 
-// Ejercicio 5: Comparación de precios entre dos productos.
+// Ejercicio 5: ComparaciÃ³n de precios entre dos productos.
 
 // entrada: precio1, precio2
 // Pedir dos precios.
 // presentar los precios
 //proceso: si el precio del primer producto es mayor 
-// presentar "el primer producto es más caro"
+// presentar "el primer producto es mÃ¡s caro"
 //si el precio del segundo producto es mayor
-//presentar "el segundo es más caro"
+//presentar "el segundo es mÃ¡s caro"
 //Sino "ambos productos tienen el mismo precio"
-//salida: Mostrar cuál es mayor, menor o si son iguales.
+//salida: Mostrar cuÃ¡l es mayor, menor o si son iguales.
 
 Funcion  Comparacion_De_Precios
     Definir precio1, precio2 Como Real
@@ -167,10 +167,10 @@ Funcion  Comparacion_De_Precios
     Leer precio2
     // Comparar los precios
     Si precio1 > precio2 Entonces
-        Escribir "El primer producto es más caro."
+        Escribir "El primer producto es mÃ¡s caro."
     Sino
         Si precio1 < precio2 Entonces
-            Escribir "El segundo producto es más caro."
+            Escribir "El segundo producto es mÃ¡s caro."
         Sino
             Escribir "Ambos productos tienen el mismo precio."
         FinSi
@@ -180,13 +180,13 @@ FinFuncion
 
 
 //Ejercicio 6: Clasificador de edad del cliente
-//Pedir edad. Indicar si es niño (0-12), joven (13-17), adulto (18-64), adulto mayor (65+).
+//Pedir edad. Indicar si es niÃ±o (0-12), joven (13-17), adulto (18-64), adulto mayor (65+).
 
 //Entrada: edad=0 (se lee)
-//Proceso: calcular la edad según los parámetros dados
-//Salida: edad de 0 a 12 = niño, edad de 13 a 17 = joven, edad de 18 a 64 = adulto, edad de 65 a + = adulto mayor
+//Proceso: calcular la edad segÃºn los parÃ¡metros dados
+//Salida: edad de 0 a 12 = niÃ±o, edad de 13 a 17 = joven, edad de 18 a 64 = adulto, edad de 65 a + = adulto mayor
 
-Funcion Clasificación_edad
+Funcion ClasificaciÃ³n_edad
 	Definir edad Como Entero
 	edad=0
 	
@@ -195,16 +195,16 @@ Funcion Clasificación_edad
 	
 	//Se coloca el Op. Logico Y para que se cumpla solo si ambas condiciones entran en el rango establecido
 	Si edad >= 0 Y edad <= 12 Entonces
-		Escribir "A los ", edad, " años, se lo considera como: Niño/Niña."
+		Escribir "A los ", edad, " aÃ±os, se lo considera como: NiÃ±o/NiÃ±a."
 	SiNo
 		Si edad >= 13 Y edad <= 17 Entonces
-			Escribir "A los ", edad, " años, se lo considera como: Joven."
+			Escribir "A los ", edad, " aÃ±os, se lo considera como: Joven."
 		SiNo
 			Si edad >= 18 Y edad <= 64 Entonces
-				Escribir "A los ", edad, " años, se lo considera como: Adulto."
+				Escribir "A los ", edad, " aÃ±os, se lo considera como: Adulto."
 			SiNo
 				Si edad >= 65 Entonces
-					Escribir "A los ", edad, " años, se lo considera como: Adulto Mayor."
+					Escribir "A los ", edad, " aÃ±os, se lo considera como: Adulto Mayor."
 				FinSi
 			FinSi
 		Fin Si
@@ -212,43 +212,43 @@ Funcion Clasificación_edad
 	
 FinFuncion
 
-// ejercicio : 7. Identificador de número par o impar
+// ejercicio : 7. Identificador de nÃºmero par o impar
 
 //ENTRADA:   numero=0 (se lee) , residuo=0 (se calcula)
 //PROCESO: residuo <- numero - (Trunc(numero / 10) * 10)
 //SALIDA: si es par o impar y si es multiplo de 10 o
 //si no es multiplo de 10 
 
-Funcion Identificador_de_número_par_e_impar
+Funcion Identificador_de_nÃºmero_par_e_impar
 	
 	Definir numero, residuo Como Entero
 	numero=0;residuo=0
 	
 	// ENTRADA
-	Escribir "Ingrese un número :"
+	Escribir "Ingrese un nÃºmero :"
 	Leer numero
 	
 	// PROCESO: Verificar si es par con MOD
 	Si numero MOD 2 = 0 Entonces
-		Escribir "El número es PAR"
+		Escribir "El nÃºmero es PAR"
 	Sino
-		Escribir "El número es IMPAR"
+		Escribir "El nÃºmero es IMPAR"
 	FinSi
 	
-	// PROCESO: Calcular módulo 10 manualmente
+	// PROCESO: Calcular mÃ³dulo 10 manualmente
 	residuo <- numero - (Trunc(numero / 10) * 10)
 	
 	Si residuo = 0 Entonces
-		Escribir "El número es MÚLTIPLO DE 10"
+		Escribir "El nÃºmero es MÃšLTIPLO DE 10"
 	Sino
-		Escribir "El número NO es múltiplo de 10"
+		Escribir "El nÃºmero NO es mÃºltiplo de 10"
 	FinSi
 FinFuncion
 
 
 
-//Ejercicio 8: Evaluador de puntuación de servicio
-// Pedir una puntuación del 1 al 10 e interpretar como "Malo", "Regular", "Bueno",
+//Ejercicio 8: Evaluador de puntuaciÃ³n de servicio
+// Pedir una puntuaciÃ³n del 1 al 10 e interpretar como "Malo", "Regular", "Bueno",
 //"Excelente".
 	
 // ENTRADA
@@ -291,37 +291,37 @@ FinFuncion
 
 
 
-// ejercicio 9 verificador de múltiplos de 3 o múltiplos de 9 o múltiplo de 12
+// ejercicio 9 verificador de mÃºltiplos de 3 o mÃºltiplos de 9 o mÃºltiplo de 12
 
-//entrada: perdir un número
+//entrada: perdir un nÃºmero
 // leer num=0
-//proceso: ver si el número ingresado es múltiplo  para 3
-// presentar si es o no múltiplo para 3 
-// asi mismo ver si o no es múltiplo  para 9 y 12
+//proceso: ver si el nÃºmero ingresado es mÃºltiplo  para 3
+// presentar si es o no mÃºltiplo para 3 
+// asi mismo ver si o no es mÃºltiplo  para 9 y 12
 //salida: mostrar si son o no multiplos para 3, 9 y 12
 //fin
 
-Funcion  Verificador_de_múltiplos
+Funcion  Verificador_de_mÃºltiplos
 	Definir num Como Entero
 	num=0
 	
-	Escribir "Ingrese un número"
+	Escribir "Ingrese un nÃºmero"
 	Leer num
 	
 	si num mod 3 = 0 Entonces
-		Escribir "El número es múltiplo de 3"
+		Escribir "El nÃºmero es mÃºltiplo de 3"
 	sino 
-		Escribir "El número NO es múltiplo de 3"
+		Escribir "El nÃºmero NO es mÃºltiplo de 3"
 	FinSi
 	si num mod 9 = 0 Entonces
-		Escribir "El número es múltiplo de 9"
+		Escribir "El nÃºmero es mÃºltiplo de 9"
 	sino 
-		Escribir "El número NO es múltiplo de 9"
+		Escribir "El nÃºmero NO es mÃºltiplo de 9"
 	FinSi
 	Si num mod 12 = 0 Entonces
-		Escribir "El número es múltipo de 12"
+		Escribir "El nÃºmero es mÃºltipo de 12"
 	sino 
-		Escribir "El número  NO es múltiplo de 12"
+		Escribir "El nÃºmero  NO es mÃºltiplo de 12"
 	FinSi
 	
 FinFuncion
@@ -329,7 +329,7 @@ FinFuncion
 
 
 //Ejercicio 10: Calculadora de propina
-//Pedir valor de la cuenta. Calcular propina del 10% o 15% según nivel de servicio.
+//Pedir valor de la cuenta. Calcular propina del 10% o 15% segÃºn nivel de servicio.
 
 //Entrada: Definir las variables (cuenta (se lee), propina (se lee), total (se calcula) y nivel_servicio (se lee))
 //Proceso: nivel_servicio = (nivel_servicio)
@@ -381,7 +381,7 @@ FinFuncion
 // SiNo
 // categoria = "es alta"
 //Escribir "La categoria es de: ", categoria (resultado)
-//Salida de loes resultados: Presentación de la categoria final de la compra
+//Salida de loes resultados: PresentaciÃ³n de la categoria final de la compra
 //ENTRADA DE LAS VARIABLES: monto (Como real), categoria (Como Caracter)
 
 Funcion clasificador_compra
@@ -403,36 +403,36 @@ Funcion clasificador_compra
 	finsi
 	
 	//SALIDA DE LOS RESULTADOS:
-	Escribir "La categoría de la compra es de: ", categoria
+	Escribir "La categorÃ­a de la compra es de: ", categoria
 FinFuncion
 
 
-//Ejercicio 12: Determinar si un número es positivo deberá presentar el doble del número
-//Si es negativo lo convierte a positivo y lo presenta. Si es cero presenta el número es neutro
-//Pedir un número y clasificar su signo.
+//Ejercicio 12: Determinar si un nÃºmero es positivo deberÃ¡ presentar el doble del nÃºmero
+//Si es negativo lo convierte a positivo y lo presenta. Si es cero presenta el nÃºmero es neutro
+//Pedir un nÃºmero y clasificar su signo.
 
 //Entrada:num=0 (se lee), doble=0 (se calcula), contrario=0 (se calcula)
 //Proceso: si num > 0 = doble = num * 2,
 //         si num < 0 = contrario = abs(num) 
-//         si num = 0 escribir: el número es neutro
-//Salida: mostrar el resultado según su clasificación de signo
+//         si num = 0 escribir: el nÃºmero es neutro
+//Salida: mostrar el resultado segÃºn su clasificaciÃ³n de signo
 
-Funcion Clasificación_signo
+Funcion ClasificaciÃ³n_signo
 	Definir num, doble, contrario Como Real
 	num=0; doble=0; contrario=0
 	
-	Escribir "Ingrese un número"
+	Escribir "Ingrese un nÃºmero"
 	Leer num
 	
 	Si num > 0 Entonces
 		doble = num * 2
-		Escribir "El doble del número ingresado es: ", doble
+		Escribir "El doble del nÃºmero ingresado es: ", doble
 	SiNo
 		Si num < 0 Entonces
-			contrario = abs(num) //se utiliza abs para cambiar el signo del número a positivo 
-			Escribir "El contrario del número ingresado es: ", contrario
+			contrario = abs(num) //se utiliza abs para cambiar el signo del nÃºmero a positivo 
+			Escribir "El contrario del nÃºmero ingresado es: ", contrario
 		SiNo
-				Escribir "El número que ingresó es neutro"
+				Escribir "El nÃºmero que ingresÃ³ es neutro"
 			FinSi
 		FinSi
 	
@@ -468,7 +468,7 @@ Finfuncion
 
 
 //Ejercicio 14: Descuento por edad y monto
-// Aplicar descuento especial solo si el cliente es mayor de 60 y compra más de $50. Si no lo es
+// Aplicar descuento especial solo si el cliente es mayor de 60 y compra mÃ¡s de $50. Si no lo es
 // aplica el iva del 15% con un descuento solo del 5%
 
 // ENTRADA
@@ -518,8 +518,8 @@ Funcion Descuento_Edad_Monto
 FinFuncion
 
 
-// Ejercicio:15. Cálculo de cambio exacto con billetes de $10 y $5
-// Pedir valor del vuelto y mostrar cuántos billetes de $10 y $5 necesita
+// Ejercicio:15. CÃ¡lculo de cambio exacto con billetes de $10 y $5
+// Pedir valor del vuelto y mostrar cuÃ¡ntos billetes de $10 y $5 necesita
 
 // entrada: vuelto=0 (se lee), B10=0 (se calcula), B5=0 (se calcula)
 // poceso: pedir el valor del vuelto 
@@ -555,10 +555,10 @@ Funcion  vuelto_en_billetes_de10_5
 FinFuncion
 
 
-// Ejercicio 16: Categorizador de día de la semana. 
+// Ejercicio 16: Categorizador de dÃ­a de la semana. 
 
-//entrada: Pedir número del 1 al 7 , num=0 (se lee)
-// proceso: mostrar qué día es.
+//entrada: Pedir nÃºmero del 1 al 7 , num=0 (se lee)
+// proceso: mostrar quÃ© dÃ­a es.
 //Validar entrada
 //salida: presentar que dia de la semana es
 
@@ -566,7 +566,7 @@ Funcion  Categorizador_De_Dia_De_La_Semana
 	Definir Num Como Entero
 	num=0 
 	
-	//La utiliza "repetir" y "Hasta Que" para asegurar que el usuario solo ingrese un número válido entre 1 y 7 
+	//La utiliza "repetir" y "Hasta Que" para asegurar que el usuario solo ingrese un nÃºmero vÃ¡lido entre 1 y 7 
 	Repetir
 		Escribir "Ingresar un numero del 1 al 7"
 		Leer Num
@@ -574,20 +574,20 @@ Funcion  Categorizador_De_Dia_De_La_Semana
 			Escribir "Entrada Invalida, debe ser del 1 al 7" 
 		FinSi
 	Hasta Que num >= 1 Y num <= 7
-	// Mostrar el día correspondiente según el número
+	// Mostrar el dÃ­a correspondiente segÃºn el nÃºmero
 	Segun num hacer
 		1:
 			Escribir "Lunes"
 		2:
 			Escribir "Martes"
 		3:
-			Escribir "Miércoles"
+			Escribir "MiÃ©rcoles"
 		4:
 			Escribir "Jueves"
 		5:
 			Escribir "Viernes"
 		6:
-			Escribir "Sábado"
+			Escribir "SÃ¡bado"
 		7:
 			Escribir "Domingo"
 			
@@ -598,13 +598,13 @@ FinFuncion
 
 
 // Ejercicio 17: Clasificador de producto por precio unitario.
-//Pedir precio unitario y decir si es "económico", "regular" o "caro" 
+//Pedir precio unitario y decir si es "econÃ³mico", "regular" o "caro" 
 
 // entrada: precio=0 (se lee)
-// proceso: si precio es menor que 50 entonces (el preducto es económico)
+// proceso: si precio es menor que 50 entonces (el preducto es econÃ³mico)
 // si el precio es >= 50 y <= 100 (el producto es regular)
 // sino (el producto es caro)
-// salida: mostrar si el producto es económico, regular o caro
+// salida: mostrar si el producto es econÃ³mico, regular o caro
 
 Funcion  Clasificador_Precio_Producto
 	Definir precio Como Real
@@ -614,9 +614,9 @@ Funcion  Clasificador_Precio_Producto
 	Escribir "Ingrese el precio unitario del producto:"
 	Leer precio
 	
-	// Clasificamos el producto según el precio
+	// Clasificamos el producto segÃºn el precio
 	Si precio < 50 Entonces
-		Escribir "El producto es económico"
+		Escribir "El producto es econÃ³mico"
 	Sino
 		Si precio >= 50 Y precio <= 100 Entonces
 			Escribir "El producto es regular"
@@ -628,7 +628,7 @@ FinFuncion
 
 
 //Ejercicio 18: Determinador de bisiesto
-// Pedir un año. Indicar si es bisiesto usando regla condicional (mod 4 y mod 100, mod 400).
+// Pedir un aÃ±o. Indicar si es bisiesto usando regla condicional (mod 4 y mod 100, mod 400).
 
 // ENTRADA
 // anio 
@@ -638,23 +638,23 @@ FinFuncion
 // anio (leer)
 // es bisiesto (calcular)
 // Si (anio MOD 4=0 y anio MOD 100<>0) o (anio MOD 400=0) Entonces 
-// Escribir " El año ", anio, " es bisiesto "
+// Escribir " El aÃ±o ", anio, " es bisiesto "
 // SiNo
-// Escribir " El año ", anio, " no es bisiesto "
+// Escribir " El aÃ±o ", anio, " no es bisiesto "
 //FinSi
 //SALIDA
 
-Funcion Año_bisiesto
+Funcion AÃ±o_bisiesto
 	Definir anio Como Entero
 	anio=0
 	
-	Escribir "Ingrese el año"
+	Escribir "Ingrese el aÃ±o"
 	Leer anio
 	
 	Si (anio MOD 4 = 0 Y anio MOD 100 <> 0) o (anio mod 400 = 0) Entonces
-		Escribir " El año ", anio, " es bisiesto "
+		Escribir " El aÃ±o ", anio, " es bisiesto "
 	SiNo
-		Escribir " El año ", anio, " no es bisiesto "
+		Escribir " El aÃ±o ", anio, " no es bisiesto "
 	Fin Si
 FinFuncion
 
@@ -665,7 +665,7 @@ FinFuncion
 //Entrada: hora=0 (se lee), minutos=0 (se calcula), segundos=0 (se calcula)
 //Proceso: minutos = horas * 60
 //         segundos = minutos * 60
-//Salida:mostrar la conversiónn de horas a minutos y segundos
+//Salida:mostrar la conversiÃ³nn de horas a minutos y segundos
 
 Funcion Conversor_hora
 	Definir horas, minutos, segundos Como Entero
@@ -678,37 +678,37 @@ Funcion Conversor_hora
 	segundos = minutos * 60
 	
 	Escribir "Las horas ingresadas: ", horas, " h"
-	Escribir "Conversión en minutos: ", minutos, " min"
-	Escribir "Conversión en segundos: ", segundos, " s"
+	Escribir "ConversiÃ³n en minutos: ", minutos, " min"
+	Escribir "ConversiÃ³n en segundos: ", segundos, " s"
 	
 FinFuncion
 
 
-//Ejercicio20. Verificador de triple de un número
+//Ejercicio20. Verificador de triple de un nÃºmero
 // Ingresar un numero que puede ser cualquiera y despues ingresar el segundo numero q sea el triple del primero y verificar si es o no es el triple 
 
-//entrada: numm1=0 (se lee) ,  numm2=0 (se lee)
-//proceso : numm2 es la multiplicacion de numm1 * 3 y si no , no es el triple 
+//entrada: num1=0 (se lee) ,  num2=0 (se lee)
+//proceso : num2 es la multiplicacion de num1 * 3 y si no , no es el triple 
 //salida : mostrar si es el triple o no del primer numero 
 
 Funcion Verificador_Triple
-    Definir numm1, numm2 Como Entero
-	numm1=0 ; numm=0
+    Definir num1, num2 Como Entero
+	num1=0 ; num2=0
 	
-    Escribir "Ingrese el primer número:"
-    Leer numm1
-    Escribir "Ingrese el segundo número:"
-    Leer numm2
+    Escribir "Ingrese el primer nÃºmero:"
+    Leer num1
+    Escribir "Ingrese el segundo nÃºmero:"
+    Leer num2
 	
-    Si numm2 = 3 * numm1 Entonces
-        Escribir "El segundo número ES el triple del primero."
+    Si num2 = 3 * num1 Entonces
+        Escribir "El segundo nÃºmero ES el triple del primero."
     Sino
-        Escribir "El segundo número NO es el triple del primero."
+        Escribir "El segundo nÃºmero NO es el triple del primero."
     FinSi
 FinFuncion
 
 
-// ejercicio:21 Determinar riesgo por síntomas múltiples para el efecto tienes
+// ejercicio:21 Determinar riesgo por sÃ­ntomas mÃºltiples para el efecto tienes
 
 //entrada: definir variables de cada sintoma = fiebre="" (se lee), respira="" (se lee), pecho="" (se lee)
 //proceso:
@@ -728,11 +728,11 @@ Funcion  Riesgo_de_sintomas
 	Definir fiebre, respira, pecho Como Caracter
 	fiebre="";respira="";pecho=""
 	
-	Escribir "¿Tiene fiebre?(SI/NO):"
+	Escribir "Â¿Tiene fiebre?(SI/NO):"
 	leer fiebre 
-	Escribir "¿Tiene dificultad para respirar? (SI/NO):"
+	Escribir "Â¿Tiene dificultad para respirar? (SI/NO):"
 	Leer respira 
-	Escribir "¿Tiene dolor en el pecho?(SI/NO):"
+	Escribir "Â¿Tiene dolor en el pecho?(SI/NO):"
 	Leer pecho
 	
 	//Para evitar errores en el programa al ingresar (si / no) de manera mayuscula o minuscula, se convierten en minusculas las respuestas
@@ -748,16 +748,16 @@ Funcion  Riesgo_de_sintomas
 FinFuncion
 
 
-//Ejercicio 22: Clasificador presión arterial
-// La tienda desea implementar una función básica en su sistema para identificar el estado
-// de salud de los clientes que se toman la presión arterial en su tienda. Para ello, solicita un
-// pequeño algoritmo que reciba la presión sistólica como entrada y muestre una clasificación
-// médica básica según la siguiente tabla:
-// Presión Sistólica Clasificación
-// Menor a 90 Presión baja
-// Entre 90 y 120 Presión normal
-// Entre 121 y 139 Prehipertensión
-// 140 o más Hipertensión
+//Ejercicio 22: Clasificador presiÃ³n arterial
+// La tienda desea implementar una funciÃ³n bÃ¡sica en su sistema para identificar el estado
+// de salud de los clientes que se toman la presiÃ³n arterial en su tienda. Para ello, solicita un
+// pequeÃ±o algoritmo que reciba la presiÃ³n sistÃ³lica como entrada y muestre una clasificaciÃ³n
+// mÃ©dica bÃ¡sica segÃºn la siguiente tabla:
+// PresiÃ³n SistÃ³lica ClasificaciÃ³n
+// Menor a 90 PresiÃ³n baja
+// Entre 90 y 120 PresiÃ³n normal
+// Entre 121 y 139 PrehipertensiÃ³n
+// 140 o mÃ¡s HipertensiÃ³n
 
 // ENTRADA
 // presion=0 (se lee)
@@ -775,7 +775,7 @@ FinFuncion
 // Clasificacion = "Hipertension"
 
 //SALIDA
-//Escribir "Clasificación médica: ", clasificacion
+//Escribir "ClasificaciÃ³n mÃ©dica: ", clasificacion
 
 Funcion Presion_arterial
 	Definir presion Como Entero
@@ -798,7 +798,7 @@ Funcion Presion_arterial
 		Fin Si
 	Fin Si
 	
-	Escribir "Clasificación médica: ", clasificacion
+	Escribir "ClasificaciÃ³n mÃ©dica: ", clasificacion
 FinFuncion
 
 
@@ -818,12 +818,12 @@ Funcion  Saludo_personalizado
 	Escribir "Ingrese su nombre:"
 	Leer nombre
 	
-	Escribir "¡hola! Que tal, " , nombre " espero que en cuentres muy bien :)"
+	Escribir "Â¡hola! Que tal, " , nombre " espero que en cuentres muy bien :)"
 	
 FinFuncion
 
 
-//Ejercicio 24: Detectar si el carácter ingresado es una vocal
+//Ejercicio 24: Detectar si el carÃ¡cter ingresado es una vocal
 //Ingresar una letra. Verificar si es a, e, i, o, u.
 
 //Entrada: letra= "" (se lee)
@@ -831,43 +831,43 @@ FinFuncion
 //         letra= "a" o letra="e" o letra="i" o letra="o" o letra="u" 
 //Salida: Verificar el tipo de vocal 
 
-Funcion Carácter_vocal
+Funcion CarÃ¡cter_vocal
 	Definir letra, vocales Como Caracter
 	letra=""
 	
 	Escribir "Ingrese una letra"
 	Leer letra
 	
-	letra = Minusculas(letra) //se coloca para evitar fallas en el algoritmo al ingresar un caráter en mayuscula
+	letra = Minusculas(letra) //se coloca para evitar fallas en el algoritmo al ingresar un carÃ¡ter en mayuscula
 	
 	Si letra= "a" o letra="e" o letra="i" o letra="o" o letra="u" Entonces
-		Escribir "La letra que ingresó es la vocal: ", letra
+		Escribir "La letra que ingresÃ³ es la vocal: ", letra
 	SiNo
-		Escribir "La letra que ingresó no es una vocal" 
+		Escribir "La letra que ingresÃ³ no es una vocal" 
 		
 	FinSi
 	
 FinFuncion
 
 
-//ejercicio25. Detectar si el carácter ingresado es una consonante
-//La función Verificar_Constante tiene como propósito identificar si una letra ingresada por el usuario es una consonante.
+//ejercicio25. Detectar si el carÃ¡cter ingresado es una consonante
+//La funciÃ³n Verificar_Constante tiene como propÃ³sito identificar si una letra ingresada por el usuario es una consonante.
 
-//Entrada: El usuario debe escribir una letra (carácter) mediante el teclado.
-//Proceso: El programa convierte esa letra a minúscula usando Minusculas(letra) para facilitar la comparación. Luego, verifica si:
-//La letra está entre "a" y "z" (es una letra del abecedario).
+//Entrada: El usuario debe escribir una letra (carÃ¡cter) mediante el teclado.
+//Proceso: El programa convierte esa letra a minÃºscula usando Minusculas(letra) para facilitar la comparaciÃ³n. Luego, verifica si:
+//La letra estÃ¡ entre "a" y "z" (es una letra del abecedario).
 //No es una vocal (a, e, i, o, u).
 //Si ambas condiciones se cumplen, se considera que la letra es una consonante.
 //Salida: Se muestra un mensaje indicando si la letra ingresada es o no una consonante.
 
 Funcion Verificar_Constante 
-	Definir letra Como Carácter
+	Definir letra Como CarÃ¡cter
 	Letra = ""
 	
 	Escribir "Ingrese una letra: "
 	Leer letra
 	
-	Letra <- Minusculas(letra) //se coloca para evitar fallas en el algoritmo al ingresar un caráter en mayuscula
+	Letra <- Minusculas(letra) //se coloca para evitar fallas en el algoritmo al ingresar un carÃ¡ter en mayuscula
 	
 	Si letra >= "a" y letra <= "z" y letra <>  "a" y letra <>  "e" y letra <>  "i" y letra <> "o" y letra  <> "u" Entonces
 		Escribir "La letra: " + letra + " es una consonante."
@@ -910,20 +910,20 @@ Funcion Nombres_iguales
 FinFuncion
 
 
-// ejercicio 27. Verificar si una letra es mayúscula o minúscula
-//Ingresar una letra. Comparar con su versión en mayúscula/minúscula.
+// ejercicio 27. Verificar si una letra es mayÃºscula o minÃºscula
+//Ingresar una letra. Comparar con su versiÃ³n en mayÃºscula/minÃºscula.
 
 // entrada: definir una variable llamada letra= "" (se lee)
 // proceso: pedir al usario que ingrese una letra 
 //leer letra  ingresada por el usuario
-// valiada si es mayúscula usando ,letra >= A y letra <= Z
-// si se cumple; mostrar "La letra ingresada es mayúscula"
-// si no es mayúscula, verificar si es minúscula usando letra >= a y letra <= z 
-// si se cumple mostrar "La letra ingresada es minúscula."
-//si no es ninguna de las dos; mostar "No es una letra válida"
-//salida: mostrar si la letra ingresada se encuentra en mayúscula, minúscula o no es una ketra válida
+// valiada si es mayÃºscula usando ,letra >= A y letra <= Z
+// si se cumple; mostrar "La letra ingresada es mayÃºscula"
+// si no es mayÃºscula, verificar si es minÃºscula usando letra >= a y letra <= z 
+// si se cumple mostrar "La letra ingresada es minÃºscula."
+//si no es ninguna de las dos; mostar "No es una letra vÃ¡lida"
+//salida: mostrar si la letra ingresada se encuentra en mayÃºscula, minÃºscula o no es una ketra vÃ¡lida
 
-Funcion  Verificar_letra_mayúscula_minúscula
+Funcion  Verificar_letra_mayÃºscula_minÃºscula
 	Definir letra Como Caracter
 	letra=""
 	
@@ -931,12 +931,12 @@ Funcion  Verificar_letra_mayúscula_minúscula
     Leer letra
 	
     Si (letra >= "A" Y letra <= "Z") Entonces
-        Escribir "La letra ingresada es mayúscula."
+        Escribir "La letra ingresada es mayÃºscula."
     Sino
         Si (letra >= "a" Y letra <= "z") Entonces
-            Escribir "La letra ingresada es minúscula."
+            Escribir "La letra ingresada es minÃºscula."
         Sino
-            Escribir "No es una letra válida."
+            Escribir "No es una letra vÃ¡lida."
         FinSi
     FinSi
 FinFuncion
@@ -946,15 +946,15 @@ FinFuncion
 //Pedir nombre y apellido por separado. Mostrar nombre completo.
 
 //ENTRADA 
-//Definir nombre y apellido, nombre_completo como carácter.
+//Definir nombre y apellido, nombre_completo como carÃ¡cter.
 //nombre="" (leer), apellido="" (leer), nombre_completo="" (calcular)
 //Proceso: nombre_completo = nombre + " " + apellido
 //salida  "su nombre completo es: " , nombre_completo
 
 Funcion NOMBRE_ENTERO
 	
-	Definir  nombre, apellido, nombre_completo Como Carácter
-	//definir nombre y apellido como carácter usando ("")
+	Definir  nombre, apellido, nombre_completo Como CarÃ¡cter
+	//definir nombre y apellido como carÃ¡cter usando ("")
 	nombre <- ""
 	apellido <- ""
 	nombre_completo <- ""
@@ -978,26 +978,27 @@ FinFuncion
 
 
 // Ejercicio 29: Verificar si una palabra es corta o larga
-//Pedir una palabra. Si tiene más de 6 caracteres, decir "larga"; si no, "corta".
+//Pedir una palabra. Si tiene mÃ¡s de 6 caracteres, decir "larga"; si no, "corta".
 
-// Entrada: definir palabra="" (se lee)
+// Entrada: definir palabra="" (se lee), cantidadCaracteres=0 (se calcula)
 //Proceso: cantidadCaracteres = Longitud(palabra)
 //Si cantidadCaracteres > 6 es larga, caso contrario es corta 
-//salida: escribir si el número de caracteres es largo o corto
+//salida: escribir si el nÃºmero de caracteres es largo o corto
 
 Funcion Palabra_corta_o_larga
 	Definir palabra Como Caracter
-	palabra= ""
+        Definir cantidadCaracteres como entero
+	palabra= ""; cantidadCaracteres=0
 	
 	Escribir "Ingresa un texto: "
 	Leer palabra
 	
-	// Obtener el número de caracteres del texto
+	// Obtener el nÃºmero de caracteres del texto
 	cantidadCaracteres = Longitud(palabra)
 	
-	// Realizar una acción según el tamaño del texto
+	// Realizar una acciÃ³n segÃºn el tamaÃ±o del texto
 	Si cantidadCaracteres > 6 Entonces
-		// Si el texto tiene más de 6 caracteres
+		// Si el texto tiene mÃ¡s de 6 caracteres
 		Escribir "Elemento con volumen considerable"
 	Sino
 		// Si el texto tiene 6 caracteres o menos
@@ -1006,74 +1007,74 @@ Funcion Palabra_corta_o_larga
 FinFuncion
 
 
-//Ejercicio 30: Contar los caracteres y convertir a mayúsculas cualquier frase (sin recorrer)
+//Ejercicio 30: Contar los caracteres y convertir a mayÃºsculas cualquier frase (sin recorrer)
 //Pedir frase. Usar funciones de PseInt de cadenas para este ejercicio
 
-//Entrada: frase = "" (se calcula), num_carácter = 0 (se calcula), mayus = "" (se calcula)
-//Proceso: 	num_carácter = Longitud(frase)
+//Entrada: frase = "" (se calcula), num_carÃ¡cter = 0 (se calcula), mayus = "" (se calcula)
+//Proceso: 	num_carÃ¡cter = Longitud(frase)
 //          mayus = Mayusculas(frase)
-//Salida: convertir la frase en mayuscula y contar el número de carácteres de la frase ingresada
+//Salida: convertir la frase en mayuscula y contar el nÃºmero de carÃ¡cteres de la frase ingresada
 
 Funcion Contar_caracteres
-	Definir num_carácter Como Entero
+	Definir num_carÃ¡cter Como Entero
 	Definir frase, mayus Como Caracter
-	num_carácter=0
+	num_carÃ¡cter=0
 	frase = ""; mayus = ""
 	
 	Escribir "Ingrese una frase: "
 	Leer frase
 	
-	num_carácter = Longitud(frase)
+	num_carÃ¡cter = Longitud(frase)
 	mayus = Mayusculas(frase)
 	
-	Escribir "Frase en mayúscula: ", mayus
-	Escribir "El número de caracteres es: ", num_carácter
+	Escribir "Frase en mayÃºscula: ", mayus
+	Escribir "El nÃºmero de caracteres es: ", num_carÃ¡cter
 	
 FinFuncion
 
 
-Algoritmo Menú_Ciclo
+Algoritmo MenÃº_Ciclo
 	Definir opciones Como Entero
 	opciones=0
 	
-	Mientras opciones <> 31 Hacer //"Mientras" permite que el menú se muestre repetitivamente hasta seleccionar la opción 31. Salida
+	Mientras opciones <> 31 Hacer //"Mientras" permite que el menÃº se muestre repetitivamente hasta seleccionar la opciÃ³n 31. Salida
 		Escribir ""
-		Escribir "Menú de opciones"
-		Escribir "Nivel Básico (Secuenciales y Condicionales Simples):"
+		Escribir "MenÃº de opciones"
+		Escribir "Nivel BÃ¡sico (Secuenciales y Condicionales Simples):"
 		Escribir "1. Calculadora_vuelto"
 		Escribir "2. Conversor_de_kilogramos_a_libras"
 		Escribir "3. Calculadora_descuentos"
 		Escribir "4. Calcular_IVA_Y_descuento"
 		Escribir "5. Comparacion_De_Precios"
-		Escribir "6. Clasificación_edad"
-		Escribir "7. Identificador_de número_par_e_impar"
+		Escribir "6. ClasificaciÃ³n_edad"
+		Escribir "7. Identificador_de nÃºmero_par_e_impar"
 		Escribir "8. Puntuacion_servicio"
-		Escribir "9. Verificador_de_múltiplos"
+		Escribir "9. Verificador_de_mÃºltiplos"
 		Escribir "10. Calculadora_propina"
 		Escribir ""
 		Escribir "Nivel Intermedio (Condicionales Anidadas y Complejas):"
 		Escribir "11. clasificador_compra"
-		Escribir "12. Clasificación_signo"
+		Escribir "12. ClasificaciÃ³n_signo"
 		Escribir "13. Verificador_Acceso_Tienda"
 		Escribir "14. Descuento_Edad_Monto"
 		Escribir "15. vuelto_en_billetes_de10_5"
 		Escribir "16. Categorizador_De_Dia_De_La_Semana"
 		Escribir "17. Clasificador_Precio_Producto"
-		Escribir "18. Año_bisiesto"
+		Escribir "18. AÃ±o_bisiesto"
 		Escribir "19. Conversor_hora"
 		Escribir "20. Verificador_Triple"
 		Escribir "21. Riesgo_de_sintomas"
 		Escribir "22. Presion_arterial"
 		Escribir ""
-		Escribir "Nivel Básico (Lógica Simples de cadenas y Comparaciones):"
+		Escribir "Nivel BÃ¡sico (LÃ³gica Simples de cadenas y Comparaciones):"
 		Escribir "23. Saludo_personalizado"
-		Escribir "24. Carácter_vocal"
+		Escribir "24. CarÃ¡cter_vocal"
 		Escribir "25. Verificar_Constante "
 		Escribir "26. Nombres_iguales"
-		Escribir "27. Verificar_letra_mayúscula_minúscula"
+		Escribir "27. Verificar_letra_mayÃºscula_minÃºscula"
 		Escribir "28. NOMBRE_ENTERO"
 		Escribir "29. Palabra_corta_o_larga"
-		Escribir "30. Contar_carácteres"
+		Escribir "30. Contar_carÃ¡cteres"
 		Escribir ""
 		Escribir "31. Salir"
 		Escribir "Seleccione una de las opciones: "
@@ -1081,7 +1082,7 @@ Algoritmo Menú_Ciclo
 		Escribir ""
 		
 		//Se utiliza "segun" para evaluar una variable y ejecutar distintas acciones dependiendo de su valor
-		//Se utiliza "hacer" ya que indica la acción que debe ejecutarse cuando se cumpla una de las condiciones dentro de "segun"
+		//Se utiliza "hacer" ya que indica la acciÃ³n que debe ejecutarse cuando se cumpla una de las condiciones dentro de "segun"
 		Segun opciones Hacer  
 			//Se usa "caso" dentro de la estructura "segun" para definir cada posible valor de la variable evaluada
 			Caso 1:
@@ -1096,19 +1097,19 @@ Algoritmo Menú_Ciclo
 			caso 5:
 				Comparacion_De_Precios()
             Caso 6:
-                Clasificación_edad()
+                ClasificaciÃ³n_edad()
 			Caso 7:
-				Identificador_de_número_par_e_impar()
+				Identificador_de_nÃºmero_par_e_impar()
 			caso 8:
 				Puntuacion_servicio()
 			caso 9:
-				Verificador_de_múltiplos()
+				Verificador_de_mÃºltiplos()
 			Caso 10:
 				Calculadora_propina()
 			caso 11 :
 				clasificador_compra()
             Caso 12:
-                Clasificación_signo()
+                ClasificaciÃ³n_signo()
 			Caso 13:
 				Verificador_Acceso_Tienda()
 			caso 14:
@@ -1120,7 +1121,7 @@ Algoritmo Menú_Ciclo
 			caso 17:
 				Clasificador_Precio_Producto()
 			caso 18: 
-				Año_bisiesto()
+				AÃ±o_bisiesto()
             Caso 19:
                 Conversor_hora()
 			caso 20: 
@@ -1132,24 +1133,24 @@ Algoritmo Menú_Ciclo
 			caso 23:
 				Saludo_personalizado()
 			Caso 24:
-                Carácter_vocal()
+                CarÃ¡cter_vocal()
 			caso 25:
 				Verificar_Constante()
 			caso 26: 
 				Nombres_iguales()
 			caso 27:
-				Verificar_letra_mayúscula_minúscula()
+				Verificar_letra_mayÃºscula_minÃºscula()
 			caso 28:
 				NOMBRE_ENTERO()
 			caso 29:
 				Palabra_corta_o_larga()
             Caso 30:
-                Contar_carácteres()
+                Contar_carÃ¡cteres()
             Caso 31:
 				Escribir "Ciclo Culminado"
 				//Se utiliza "de otro modo" para cuando la variable evaluada en "segun" no coinciden con ninguna de las opciones predefinidas
 			De Otro Modo:
-				Escribir "Opción inválida, ingrese otro."
+				Escribir "OpciÃ³n invÃ¡lida, ingrese otro."
 				
 		FinSegun
 	FinMientras
